@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Base</title>
+
+    <style>
+        header{
+            background-color: cornflowerblue;
+            height: 150px;
+        }
+        nav{
+            background-color: darkseagreen;
+        }
+        main{
+            width: 70%;
+            padding: 15px;
+            box-sizing: border-box;         
+
+            /*
+            height: 500px;
+            overflow:auto;
+            */
+        }
+        aside{
+            width: 30%;
+            padding:15px;
+            box-sizing: border-box;   
+            
+        }
+        footer{
+            background-color: darkblue;
+            height: 150px;
+        }
+        div.row{
+            display:flex;
+            flex-wrap: wrap;
+        }
+
+        div.container{
+            background-color: lightblue;
+            width: 90%;
+            margin:auto;
+        }
+
+        body{
+            margin:0;
+        }
+
+        nav ul.navbar{
+            margin:0;
+            display:flex;
+            list-style-type: none;
+            padding:0;
+            flex-wrap:wrap;
+        }
+
+        nav li{
+            width: 25%;
+            text-align: center;
+        }
+
+        nav a:link, nav span{
+           text-decoration: none;
+           padding:15px;
+           display: block;
+        }
+
+        nav a:hover{
+            background-color: dodgerblue;
+        }
+
+        .dropdown-menu{
+            position:absolute;
+            width:25%;
+            background-color: white;
+            display:none;
+        }
+
+        .nav-item:hover .dropdown-menu{
+            display:block;
+        }
+
+        aside img{
+            width: 100%;
+        }
+
+        aside h1{
+            font-size:3vw;
+        }
+
+        @media (max-width:576px){
+            main, aside{
+                width:100%;
+            }
+
+            div.container{
+                width:100%;
+            }
+            aside h1{
+                font-size:6vw;
+            }
+
+            nav li{
+                width:100%;
+            }
+            .dropdown-menu{
+                position:static;
+                width:100%;
+            }
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header></header>
+        <nav>
+            <ul class="navbar">
+                <li class="nav-item">
+                    <span>Submenu</span>
+                    <div class="dropdown-menu">
+                        <a href="#">Link 1-1</a>
+                        <a href="#">Link 1-2</a>
+                        <a href="#">Link 1-3</a>
+                    </div>
+                </li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+            </ul>
+        </nav>
+        <div class="row">
+            <main>
+
+                <!-- p*10>lorem -->
+                <h1>Parte 1</h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate cum minus, assumenda delectus eius facilis repudiandae tempore iste, deserunt obcaecati, soluta aperiam! Et ratione autem fugit eum, modi quos.</p>
+                <p>Sunt, omnis. Incidunt dolorem repellendus ducimus aspernatur doloremque voluptatibus expedita delectus fuga enim, vero quos accusamus distinctio laudantium eos aliquam, error, recusandae voluptas modi consectetur culpa adipisci reiciendis mollitia eum.</p>
+                <p>Nemo illo eius facilis ducimus reiciendis, fugit saepe! Tempore eligendi voluptas voluptatum in, maiores laborum! Temporibus, sint corrupti exercitationem maiores porro odio vero voluptatum nisi ipsam rem maxime provident fugit.</p>
+                <p>A repellat error quasi quis corrupti. Asperiores minima tenetur voluptatum magni a doloremque quam, aperiam vero laudantium sit laboriosam similique molestiae, exercitationem voluptates dolorum suscipit consequuntur sequi, maiores nisi animi?</p>
+                <p>Nisi rerum nihil ducimus, facere ea optio magnam eos officiis consequatur voluptatibus possimus, vitae quia quae velit nostrum dolore ut culpa architecto excepturi doloremque unde inventore? Quo quae adipisci distinctio?</p>
+
+                <h1>Parte 2</h1>
+
+                <p>Nemo aspernatur excepturi repudiandae at voluptatem fuga veritatis. Maiores a voluptates voluptatum dolores repellendus quam, pariatur praesentium consequatur ipsam, iusto perspiciatis! Neque vitae cupiditate vero omnis nobis rem molestias sapiente!</p>
+                <p>Blanditiis illo amet iusto sed magni placeat eos quas culpa, quisquam assumenda odit asperiores enim consequuntur doloremque! Aliquid, voluptas quod consectetur alias nemo aliquam quia magni molestias nam, maxime ipsa?</p>
+                <p>Perferendis nemo fugiat vitae excepturi omnis quo non, laudantium amet voluptas, voluptatum ipsa recusandae est facere aliquid aspernatur delectus a magnam nihil dolore explicabo repudiandae laborum. Officiis accusamus nemo voluptate?</p>
+                <p>Consequatur incidunt dicta, expedita non, in quis perferendis nihil culpa assumenda provident delectus qui explicabo laudantium hic architecto neque aperiam aut nulla quisquam. Ex nulla reiciendis natus culpa recusandae fugit.</p>
+                <p>Alias, quis vitae. In odit voluptatibus recusandae, quidem nostrum, incidunt est a tenetur laudantium beatae odio amet impedit, minus iure assumenda. Consequuntur blanditiis minus at deleniti, consectetur aperiam hic eaque.</p>
+
+            </main>
+            <aside>
+
+                <h1>TimBernersLee</h1>
+                <img src="midias/tim.jpg" alt="Tim Berners-Lee">
+
+            </aside>
+        </div>
+        <footer></footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de JavaScript</title>
+
+</head>
+<body id="corpo">
+    
+    <h1>Modificando conteúdo do HTML</h1>
+
+    <p id="teste01">Olá Mundo!</p>
+
+    <button onclick="Mensagem()">Clique</button>
+
+    <script>
+
+        function Mensagem(){
+            
+            document.getElementById("teste01").innerText = "Obrigado por clicar!";
+
+        }
+
+    </script>
+
+    <h1>Modificando atributo do HTML</h1>
+
+    <button onclick="Liga()">Liga</button>
+
+    <img id="lampada" src="midias/off.gif">
+
+    <button onclick="Desliga()">Desliga</button>
+
+    <script>
+        function Liga(){
+            document.getElementById("lampada").src = "midias/on.gif"
+        }
+
+        function Desliga(){
+            document.getElementById("lampada").src = "midias/off.gif"
+        }
+
+    </script>
+
+    <h1>Modificando CSS</h1>
+
+    <button onclick="Escuro()">Tema escuro</button>
+
+    <script>
+
+        function Escuro(){
+            document.getElementById("corpo").style.backgroundColor = "#333333";
+            document.getElementById("corpo").style.color = "white";
+        }
+    </script>
+
+
+    
+</body>
+</html>

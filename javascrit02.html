@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de JavaScript</title>
+</head>
+<body>
+    <h1>Mensagens via JavaScript</h1>
+    <h2>Mensagem via HTML</h2>
+
+    <p id="msg1"></p>
+    <button onclick="mensagem1()" >Mensagem</button>
+
+    <script>
+        function mensagem1(){
+            document.getElementById("msg1").innerHTML = "Mensagem <br> via HTML";
+        }
+    </script>
+
+    <h2>Mensagem via escrita direta</h2>
+    <button onclick="mensagem2()">Mensagem</button>
+
+    <script>
+        function mensagem2(){
+            document.write("Mensagem via escrita direta");
+        }
+    </script>
+
+    <h2>Mensagem via pop-up</h2>
+    <button onclick="mensagem3()">Mensagem</button>
+
+    <script>
+        function mensagem3(){
+            window.alert("Mensagem via pop-up");
+        }
+    </script>
+
+    <h2>Mensagem via console</h2>
+    <button onclick="mensagem4()">Mensagem</button>
+
+    <script>
+        function mensagem4(){
+            console.log("Mensagem via console");
+        }
+    </script>
+
+    <h1>Variáveis</h1>
+    <button onclick="mensagem5()">Mensagem</button>
+
+
+    <script>
+        function mensagem5(){
+            /* Isto é um comentário */    
+
+            let var1; // declaração de variável
+            var1 = "Senac Lapa Tito"; // atribuição de valor
+
+            window.alert(var1);
+            console.log(var1);
+            document.getElementById("msg1").innerHTML = var1;
+
+            console.log(typeof var1) // tipo da variável
+
+            let var2 = 3; // declaração e atribuuição no mesmo comando
+
+            console.log(var2);
+            console.log(typeof var2);
+
+            let var3 = false;
+            console.log(var3);
+            console.log(typeof var3);
+
+            let var4 = document.getElementById("msg1");
+            console.log(var4);
+            console.log(typeof var4);
+        }
+            </script>
+
+    
+</body>
+</html>
