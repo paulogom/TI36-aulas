@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis e Operadores</title>
+</head>
+<body>
+
+    <input type="text" id="numero1">
+    <input type="text" id="numero2">
+    <p id="mensagem"></p>
+    <p id="mensagem2"></p>
+    <p id="mensagem3"></p>
+    <p id="mensagem4"></p>
+
+    <button onclick="soma()">Calcula</button>
+
+    <script>
+        function soma(){
+            let num1 = Number(document.getElementById("numero1").value);
+            let num2 = Number(document.getElementById("numero2").value);
+
+            let resultado = num1 + num2;
+
+            document.getElementById("mensagem").innerText = "Soma: " + resultado;
+
+            resultado = num1 - num2;
+
+            document.getElementById("mensagem2").innerText = "Subtração: " + resultado;
+
+            resultado = num1 * num2;
+
+            document.getElementById("mensagem3").innerText = "Multiplicação: " + resultado;
+
+            resultado = num1 / num2;
+
+            document.getElementById("mensagem4").innerText = "Divisão: " + resultado;
+        }
+    </script>
+    
+</body>
+</html>
